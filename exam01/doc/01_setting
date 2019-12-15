@@ -25,7 +25,9 @@
 
 # MySQL 연결 테스트와 jUnit(p70~)
 
+# 스프링 + MyBatis + MySQL 설정(p77~)
+  - spring-jdbc, spring-test 라이브러리
+  - MyBatis, MyBatis-spring
+ 
 
-
-  
   

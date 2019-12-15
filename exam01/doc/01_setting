@@ -29,5 +29,11 @@
   - spring-jdbc, spring-test 라이브러리
   - MyBatis, MyBatis-spring
  
+# root-context.xml 수정(p83~)
+  - 네임스페이스에 aop, context, jdbc, mybatis-spring 옵션 체크
+  
+-------------------------------------------------------------------
+
+p86  
 
   

@@ -39,6 +39,10 @@
 # MySQL과의 연결을 담당하는 DataSource 설정하기(p86~)
 
 # MyBatis와 MySQL 연결하는 SqlSessionFactory 객체 생성(p90~)
+
+# mybatis-config.xml 파일 추가(p91~)
+
+
   
 
 

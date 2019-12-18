@@ -65,7 +65,9 @@
 # 어노테이션의 종류(p105)
 
 # 기초적인 컨트롤러 생성 실습(p105~)
-
+  - void 리턴 타입의 경우 : SampleController
+  - String 리턴 타입의 경우 : SampleController2
+  
 
 
 

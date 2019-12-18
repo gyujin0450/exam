@@ -21,8 +21,12 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<context:component-scan base-package="kr.pmadvisor.web" />
-	
-	
+	<!-- 
+	<context:component-scan base-package="kr.pmadvisor.web" />	
+	 -->
+	 
+	<context:component-scan base-package="kr.pmadvisor.web" use-default-filters="false">
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+	</context:component-scan>
 	
 </beans:beans>

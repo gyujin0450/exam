@@ -67,6 +67,8 @@
 # 기초적인 컨트롤러 생성 실습(p105~)
   - void 리턴 타입의 경우 : SampleController
   - String 리턴 타입의 경우 : SampleController2
+  - 만들어진 결과 데이터를 전달해야 하는 경우 : ProductVO, SampleController3
+
   
 
 

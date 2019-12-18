@@ -69,6 +69,7 @@
   - String 리턴 타입의 경우 : SampleController2
   - 만들어진 결과 데이터를 전달해야 하는 경우 : ProductVO, SampleController3
   - 리다이렉트를 해야 하는 경우 : SampleController4
+  - JSON 데이터를 생성하는 경우 : SampleController5
   
   
 

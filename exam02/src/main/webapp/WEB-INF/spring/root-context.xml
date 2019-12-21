@@ -4,5 +4,12 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->
-		
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+	    <!-- pom.xml에 log4jdbc-log42 추가 -->
+		<property name="driverClassName" value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy"></property>
+		<property name="url" value="jdbc:log4jdbc:mysql://127.0.0.1:3306/book_ex?serverTimezone=Asia/Seoul"></property>
+		<property name="username" value="pmsadmin00"></property>
+		<property name="password" value="qwer@asdF1"></property>		
+	</bean>
+			
 </beans>

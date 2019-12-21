@@ -14,4 +14,16 @@
  		(#{userid}, #{userpw}, #{username}, #{email})
  	</insert>
  
+ 	<select id="selectMember" resultType="kr.pmadvisor.domain.MemberVO">
+ 		select * 
+ 		from tbl_member 
+ 		where userid = #{userid} 	
+ 	</select>
+ 
+ 	<select id="readWithPw" resultType="kr.pmadvisor.domain.MemberVO">
+ 		select 	* 
+ 		from 	tbl_member 
+ 		where   userid = #{userid} and userpw = #{userpw}  	
+ 	</select> 	
+ 
  </mapper> 

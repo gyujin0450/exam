@@ -159,7 +159,8 @@
 # MyBatis의 로그 log4jdbc-log4j2 (p138)
   - log4jdbc.log4j2.properties,logback.xml 복사에 쓰자(오타내지 말구~)
    
-    
+# MyBatis의 #{} 문법(p141)
+  - 
  
   
 

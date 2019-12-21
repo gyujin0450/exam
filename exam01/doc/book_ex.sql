@@ -11,4 +11,7 @@ create table tbl_member (
 
 desc tbl_member;
 
+select now();
+
+select * from tbl_member;
 

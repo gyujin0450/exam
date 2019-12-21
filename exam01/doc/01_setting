@@ -156,6 +156,8 @@
 # 테스트 코드 작성(p137)
   - WEB-INF 경로 작성시 오타 주의!!	
     
+# MyBatis의 로그 log4jdbc-log4j2 (p138)
+  - log4jdbc.log4j2.properties,logback.xml 복사에 쓰자(오타내지 말구~)
    
     
  

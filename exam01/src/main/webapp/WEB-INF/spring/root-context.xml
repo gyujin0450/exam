@@ -32,5 +32,8 @@
 		destroy-method="clearCache">
 		<constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory" />
 	</bean>
+	
+	<!-- 스프링에 빈 등록(p136) -->
+	<context:component-scan base-package="kr.pmadvisor.persistence"/>
 		
 </beans>

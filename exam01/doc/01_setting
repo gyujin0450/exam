@@ -131,7 +131,20 @@
   - myBatis-Spring에서 XML Mapper 인식
   > root-context.xml 설정
   
-  
+# DAO 인터페이스의 구현(p133~
+  - MyBatis에서 DAO를 이용하는 경우는 SqlSessionTemplate 라는 것을 이용해
+    DAO를 구현하므로 우선 SqlSessionTemplate을 설정함
+    
+  - SqlSessionTemplate
+    > 데이터베이스와 연결을 맺고, 작업이 완료된후에 연결을 close()하는 작업 수행
+    > MyBatis의 SqlSession 인터페이스를 구현한 클래스
+    > 트랜잭션의 관리나 쓰레드 처리의 안정성 등을 보장해주고
+      데이터베이스의 연결과 종료를 책임짐
+    > SqlSessionTemplate은 SqlSessionFactory를 생성자로 주입해서 설정함
+    > root-context.xml에 설정함     
+
+## 구현 클래스 작성(p134)
+	> 
     
    
     

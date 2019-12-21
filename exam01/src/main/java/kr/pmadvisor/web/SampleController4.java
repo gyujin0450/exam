@@ -19,7 +19,8 @@ public class SampleController4 {
 		
 		rttr.addFlashAttribute("msg", "This is the Message!! with redirected");
 		
-		return "redirect:/doF";
+		// return "redirect:/doF";
+		return "redirect:/doF?msg=rttr";
 		
 	}
 	

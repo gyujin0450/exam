@@ -1,23 +1,36 @@
--- 게시판
+-- EXERD 자동생성된 테이블 삭제  
+-- Default 지정등릉 못함...
+drop table tbl_board;
+
+-- 게시판 DDL
 CREATE TABLE `book_ex`.`tbl_board` (
-	`bno`     INTEGER      NOT NULL COMMENT '번호', -- 번호
-	`title`   VARCHAR(255) NULL     COMMENT '제목', -- 제목
-	`content` TEXT         NULL     COMMENT '내용', -- 내용
-	`writer`  VARCHAR(50)  NULL     COMMENT '작성자', -- 작성자
-	`regdate` TIMESTAMP    NULL     COMMENT '등록일', -- 등록일
-	`viewcnt` INTEGER      NULL     COMMENT '조회수' -- 조회수
-)
-COMMENT '게시판';
+	`bno`     INT 			NOT NULL 	Auto_Increment,
+	`title`   VARCHAR(200) 	Not NULL,
+	`content` TEXT         	NULL,
+	`writer`  VARCHAR(50)  	Not NULL,
+	`regdate` TIMESTAMP    	NOT NULL 	Default now(), 
+	`viewcnt` INT		    NULL		Default 0,
+    Primary key (bno)
+);
 
--- 게시판
-ALTER TABLE `book_ex`.`tbl_board`
-	ADD CONSTRAINT `PK_tbl_board` -- 게시판 기본키
-		PRIMARY KEY (
-			`bno` -- 번호
-		);
+select * from tbl_board;
 
-ALTER TABLE `book_ex`.`tbl_board`
-	MODIFY COLUMN `bno` INTEGER NOT NULL AUTO_INCREMENT COMMENT '번호';
+-- 테스트를 위한 SQL 준비
 
-ALTER TABLE `book_ex`.`tbl_board`
-	AUTO_INCREMENT = 1;
+-- 새로운 게시물의 등록에 사용하는 SQL
+insert into tbl_board( title, content, writer)
+values('제목','내용','user00');
+
+-- 게시물의 조회에 사용하는 SQL
+select * from tbl_board where bno=1;
+
+-- 게시물의 전체 목록에 사용하는 SQL
+select * from tbl_board where bno > 0 order by bno desc;
+
+-- 게시물의 수정에 사용하는 SQL
+update tbl_board set title="제목수정" where bno=1;
+
+-- 게시물의 삭제에 사용하는 SQL
+delete from tbl_board where bno = 1;
+
+commit;

@@ -1,4 +1,4 @@
-package kr.pmadvisor.web;
+package kr.pmadvisor.controller;
 
 import java.text.DateFormat;
 import java.util.Date;

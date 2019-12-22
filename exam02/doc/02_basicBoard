@@ -10,6 +10,8 @@ Part2. 기본적인 기능의 게시물 관리
   - log4jdbc.log4j2.properties,logback.xml,mybatis-config.xml 파일 복사
 # DataSource 등록(p160)
 # DataSoyrce 테스트(p160)
-  
+# 테스트를 위한 SQL 준비(p164)
+
+# 스프링의 UTF-8 처리 필터등록(p165)  
 
 
